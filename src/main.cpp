@@ -3,7 +3,7 @@
 #include "client.hpp"
 #include "parser.hpp"
 
-int main(int argc, char** argv) try {
+int main(int argc, const char** argv) try {
     using parser::parseNExecuteCommand;
 
     client::MPDClient con;
