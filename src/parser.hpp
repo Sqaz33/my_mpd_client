@@ -2,13 +2,11 @@
 
 #include <istream>
 
-#include "mmpd.hpp"
+#include "client.hpp"
 
 namespace parser {
 
-void parseNExecuteCommand(std::istream& is, 
-                          mmpd::MPDConnection& con,
-                          bool& exit);
+bool parseNExecuteCommand(std::istream& is, client::MPDClient& con);
 
-}
+} // namespace parser
 
